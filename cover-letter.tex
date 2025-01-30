@@ -1,0 +1,77 @@
+% Basic Cover Letter
+% Author:  Mitchell Fehr
+
+\documentclass[11pt]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage[empty]{fullpage}
+\usepackage[hidelinks]{hyperref}
+\usepackage{graphicx}
+\usepackage{fontawesome5}
+\usepackage{eso-pic}
+\usepackage{charter}
+\usepackage{setspace}
+
+\setstretch{1.15}
+
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+\definecolor{gr}{RGB}{225,225,225}
+
+\input{info}
+
+\begin{document}
+
+% Shaded header banner
+\AddToShipoutPictureBG{%
+\color{gr}
+\AtPageUpperLeft{\rule[-1.3in]{\paperwidth}{1.3in}}
+}
+
+% Header
+\begin{center}
+{\fontsize{28}{0}\selectfont\scshape Mitchell Fehr}
+
+\faMapMarker\enspace Omaha, NE \hfill
+\faEnvelope\enspace mfehr7@gmail.com\hfill
+\faLinkedinIn\enspace mitchell-fehr-491394292\hfill
+\faPhone\enspace (402) 510-7608
+\end{center}
+
+\vspace{0.3in}
+
+% Opening block
+January 28, 2025
+
+\vspace{0.2in}
+Hiring Manager \newline
+Databricks \newline
+351 E Evelyn Ave \newline
+Mountain View, CA 94041 \newline
+
+\vspace{-0.1in}\greeting\ Hiring Manager, \newline
+
+% Body
+\vspace{-0.1in}\setlength\parindent{24pt}
+
+
+\noindent I am super thrilled to be considered for the role of Data Scientist - New Grad at Databricks. During my job search, I stumbled upon this position on LinkedIn and immediately knew I had to apply. As a recent graduate, I'm eager to dive in and put my machine learning knowledge to use.
+
+\noindent As a Data Science student at the University of Nebraska-Lincoln, I took many courses that apply directly to this job. To learn concepts at the core of Data Science, I took Intro to Machine Learning, Data Analysis, and Data Structures and Algorithms. Other classes I took such as Probability and Linear Algebra helped me gain a deeper understanding of how statistics and mathematics play a large role in the work a Data Scientist does. 
+
+\noindent While working as a Data Intern at Blue Cross Blue Shield of Nebraska, I was exposed to real-world datasets and problem solving. I developed a process for the company to extract valuable insights from new provider optimization data through a dashboard using SQL Server and PowerBI. In another project, I automated scraping data from semi-structured pdfs using Python in Azure Databricks. These opportunities offered tremendous growth and expanded my toolbox for tackling data problems. 
+
+\noindent I would love to discuss further how my skills and experiences align with this role. Please feel free to contact me at your earliest convenience. Thank you for your time and consideration for the Data Scientist position at Databricks.
+
+% Closer
+\vspace{0.1in}
+\vfill
+
+\begin{flushleft}
+Best Regards,
+
+\vspace{0.9 in}
+
+Mitchell Fehr
+\end{flushleft}
+
+\end{document}
